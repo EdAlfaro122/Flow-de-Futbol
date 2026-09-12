@@ -1,0 +1,13 @@
+.hero-image {
+  width: 100%;
+  aspect-ratio: 1834 / 964;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .hero-image {
+    aspect-ratio: 1834 / 850;
+    object-position: center top;
+  }
+}

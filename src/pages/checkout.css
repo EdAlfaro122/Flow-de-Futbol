@@ -1,0 +1,136 @@
+.checkout {
+  width: 90%;
+  max-width: 900px;
+  min-height: 60vh;
+  margin: 40px auto;
+}
+
+.checkout h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* Resumen del pedido*/
+
+.checkout-resumen {
+  padding: 22px;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-resumen h2 {
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+}
+
+/* Productos*/
+
+.checkout-producto { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #eee; 
+}
+
+.checkout-producto:last-child { 
+    border-bottom: none; 
+} 
+
+.checkout-producto p {
+    margin: 0; 
+}
+
+.checkout-producto-nombre { 
+    font-weight: 600; 
+    color: #222; 
+}
+
+.checkout-producto-detalle { 
+    color: #666; 
+    font-size: 0.95rem; 
+}
+
+/* Total*/
+
+.checkout-total {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+.checkout-total h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Botón*/
+
+.checkout-button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.checkout-button:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.checkout-button:active {
+  transform: translateY(0);
+}
+
+/* Carrito vacío*/
+
+.checkout-vacio {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+/* Desktop*/
+
+@media (min-width: 768px) {
+
+  .checkout {
+    margin-top: 50px;
+  }
+
+  .checkout-resumen {
+    padding: 30px;
+  }
+
+  .checkout-producto {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkout-producto > div:last-of-type {
+  text-align: center;
+}
+
+.checkout-producto > strong {
+  text-align: right;
+}
+
+  .checkout-button {
+    width: auto;
+    min-width: 220px;
+    margin-left: auto;
+  }
+}

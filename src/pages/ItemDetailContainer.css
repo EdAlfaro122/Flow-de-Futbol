@@ -1,0 +1,235 @@
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.product-detail-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #f5f5f5;
+}
+
+.product-detail-image img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.product-detail-info {
+  padding: 10px 0;
+}
+
+.product-detail-info h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.product-detail-details {
+  margin: 10px 0 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+.product-detail-price {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.product-detail-deposit {
+  margin: 6px 0 30px;
+  color: #666;
+  font-size: 15px;
+}
+
+.product-detail-info .product-button {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.product-detail-info .product-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.product-detail-info .product-button:active {
+  transform: translateY(0);
+}
+
+.order-info {
+  padding-top: 20px;
+}
+
+.order-info h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.order-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.order-step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.order-step span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #111;
+  color: white;
+  font-weight: 700;
+}
+
+.order-step p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.jersey-number {
+  margin-bottom: 25px;
+}
+
+.jersey-number h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.jersey-number select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.custom-number {
+  display: grid;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.custom-number label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.custom-number input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.custom-number input:focus,
+.jersey-number select:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.jersey-sizes {
+  margin-bottom: 25px;
+}
+
+.jersey-sizes h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size-options button {
+  min-width: 48px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.size-options button:hover {
+  border-color: #111;
+}
+
+.size-options button.selected {
+  background-color: #111;
+  color: white;
+  border-color: #111;
+}
+
+.reserve-button {
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e5e5e5;
+  color: #777;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .order-info {
+    grid-column: 1 / -1;
+    padding-top: 30px;
+  }
+
+  .order-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .order-step {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin: 70px auto;
+  }
+
+  .product-detail-info h1 {
+    font-size: 40px;
+  }
+}

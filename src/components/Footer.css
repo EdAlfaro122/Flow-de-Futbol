@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 70px;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.footer p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-socials a:hover {
+  text-decoration: underline;
+}
