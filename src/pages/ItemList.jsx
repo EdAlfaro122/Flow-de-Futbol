@@ -1,9 +1,10 @@
 import ProductCard from "../components/ProductCard";
+import "./ItemList.css";
 
 function ItemList({ productos }) {
   return (
     <>
-      <h1>Catálogo</h1>
+      <h1 className="catalogo-title">Catálogo</h1>
 
       <div className="products-grid">
         {productos.map((producto) => (

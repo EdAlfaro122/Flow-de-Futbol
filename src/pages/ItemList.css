@@ -1,0 +1,40 @@
+.catalogo-title {
+  text-align: center;
+  margin: 30px 0 25px;
+  font-size: 1.9rem;
+}
+
+.products-grid {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (min-width: 700px) {
+  .catalogo-title {
+    font-size: 2.1rem;
+    margin: 35px 0 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .catalogo-title {
+    font-size: 2.2rem;
+    margin: 40px 0 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+}
